@@ -9,7 +9,8 @@ then point to the right library locations where brew installs them:
 
 ```
 export CXX="clang++"
-export CXXFLAGS=$CFLAGS" -I/opt/homebrew/Cellar/fltk/HEAD-0fd10e9_1/include -I/opt/homebrew/Cellar/fltk/HEAD-0fd10e9_1/include/FL/images -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -D_THREAD_SAFE -D_REENTRANT"
+export CXXFLAGS=$CFLAGS" -I/opt/homebrew/Cellar/fltk/HEAD-0fd10e9_1/include"
+export CXXFLAGS=$CXXFLAGS" -I/opt/homebrew/Cellar/fltk/HEAD-0fd10e9_1/include/FL/images -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -D_THREAD_SAFE -D_REENTRANT"
 export CPPFLAGS="-I/opt/homebrew/include/" # -I/opt/homebrew/Cellar/netpbm/10.86.34/"
 export LDFLAGS="-L/opt/homebrew/lib/ -g"
 export LDFLAGS=$LDFLAGS" -L/opt/homebrew/Cellar/boost/1.79.0_2/lib -lboost_serialization -lboost_serialization-mt"
